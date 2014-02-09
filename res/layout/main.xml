@@ -1,13 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
+    android:layout_height="fill_parent">
+	<LinearLayout
+		android:id="@+id/llRuler"
+		android:layout_width="fill_parent"
+		android:layout_height="200px"
+		android:layout_alignParentTop="true"
+		/>
+	<Spinner
+		android:id="@+id/spRulerUnit"
+		android:layout_width="250px"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/llRuler"
+		android:entries="@array/unit_names"
+		/>
+	
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
-
-</LinearLayout>
+	<Button
+		android:id="@+id/btnSet"
+		android:text="@string/set"
+		android:layout_width="500px"
+		android:layout_height="wrap_content"
+		android:onClick="setDiagonal" 
+		android:layout_centerInParent="true"/>
+	
+	<TextView
+		android:layout_width="200px"
+		android:layout_height="wrap_content"
+		android:text="@string/screen_diagonal" 
+		android:layout_above="@+id/btnSet"
+		android:layout_alignLeft="@+id/btnSet"
+		android:layout_toLeftOf="@+id/etDiagonal"/>
+	<EditText
+		android:id="@+id/etDiagonal"
+		android:layout_width="200px"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/btnSet"
+		android:layout_toLeftOf="@+id/spDiagUnit"
+		/>
+	<Spinner 
+		android:id="@+id/spDiagUnit"
+		android:layout_width="100px"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/btnSet"
+		android:layout_alignRight="@+id/btnSet"
+		android:entries="@array/unit_names"
+	/>
+	
+	<Button
+		android:id="@+id/btnPhotoMeasure"
+		android:text="@string/openPhotoMeasure"
+		android:layout_below="@+id/btnSet"
+		android:layout_width="500px"
+		android:layout_height="wrap_content"
+		android:onClick="openPhotoMeasure" 
+		android:layout_centerInParent="true"/>
+	
+	<Button 
+		android:id="@+id/btnSettings"
+		android:text="@string/settings"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="showSettings" 
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"/>
+</RelativeLayout>

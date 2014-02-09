@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/prefs_category_resolution"
+		android:key="category_dpi">
+		
+		<EditTextPreference 
+			android:key="long_dpi"
+			android:title="@string/prefs_dpi_long"
+			android:summary="@string/prefs_dpi_long_summary"
+			android:dialogTitle="@string/prefs_dpi_long"
+			android:dialogMessage="@string/prefs_dpi_long_summary"
+			android:defaultValue="0"/>
+		<EditTextPreference 
+			android:key="short_dpi"
+			android:title="@string/prefs_dpi_short"
+			android:summary="@string/prefs_dpi_short_summary"
+			android:dialogTitle="@string/prefs_dpi_short"
+			android:dialogMessage="@string/prefs_dpi_short_summary"
+			android:defaultValue="0"/>
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="category_units"
+		android:title="@string/prefs_category_units">
+		<ListPreference
+			android:key="ruler_unit"
+			android:title="@string/prefs_ruler_unit"
+			android:summary="@string/prefs_ruler_unit_summary"
+			android:entries="@array/unit_names"
+			android:entryValues="@array/unit_names"/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

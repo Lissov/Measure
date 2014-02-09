@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+<resources>
+	<string-array name="unit_names">
+		<item name="inch">inch</item>
+		<item name="cm">cm</item>
+	</string-array>
+	<string-array name="unit_inch">
+		<item name="inch">1</item>
+		<item name="cm">0.393</item>
+	</string-array>
+	
+</resources>

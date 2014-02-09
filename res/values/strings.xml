@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, MainActivity!</string>
+    <string name="screen_diagonal">Screen size(diagonal):</string>
+    <string name="ruler">Ruler</string>
+    <string name="set">Set diagonal</string>
+    <string name="settings">Settings</string>
     <string name="app_name">Measure</string>
+	<string name="app_name_prefs">Measure: preferences</string>
+	<string name="makePhoto">Make Photo</string>
+	<string name="openPhotoMeasure">Photo measurement</string>
+	
+	
+	<string name="prefs_category_resolution">Screen resolution</string>
+	<string name="prefs_dpi_long">Dpi long</string>
+	<string name="prefs_dpi_long_summary">Dpi for bigger dimension (width in landscape)</string>
+	<string name="prefs_dpi_short">Dpi short</string>
+	<string name="prefs_dpi_short_summary">Dpi for smaller dimension (height in landscape)</string>
+	<string name="prefs_category_units">Units</string>
+	<string name="prefs_ruler_unit">Ruler</string>
+	<string name="prefs_ruler_unit_summary">Units on the ruler</string>
+	
+	<string name="is_an_invalid_number">is not a valid number</string>
 
+	<string name="menu_preferences">Settings</string>
 </resources>
