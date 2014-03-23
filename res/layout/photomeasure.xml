@@ -10,9 +10,14 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:onClick="makePhoto" />
-		<ImageView
-			android:id="@+id/ivPhoto"
+		<FrameLayout
 			android:layout_width="fill_parent"
-			android:layout_height="wrap_content" />
+			android:layout_height="fill_parent"
+			android:id="@+id/flPhoto">
+			<ImageView
+				android:id="@+id/ivPhoto"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+		</FrameLayout>
 	
 </LinearLayout>
